@@ -1,0 +1,26 @@
+{
+  "name": "procfile",
+  "description": "A simple CLI tool for ensuring that a given node script runs continuously (i.e. forever)",
+  "version": "0.0.0",
+  "author": "Charlie Robbins <charlie.robbins@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/indexzero/node-procfile.git"
+  },
+  "keywords": [
+    "tools",
+    "procfile",
+    "sysadmin"
+  ],
+  "devDependencies": {
+    "async": "0.1.x",
+    "vows": "0.5.x"
+  },
+  "main": "./lib/procfile",
+  "scripts": {
+    "test": "vows test/*-test.js --spec"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  }
+}
