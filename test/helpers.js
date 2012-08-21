@@ -10,7 +10,7 @@ var fs = require('fs'),
     path = require('path');
 
 var fixtures = path.join(__dirname, 'fixtures'),
-    files = [path.join(fixtures, 'ruby.procfile'), path.join(fixtures, 'node.procfile')],
+    files = [path.join(fixtures, 'ruby.procfile'), path.join(fixtures, 'node.procfile'), path.join(fixtures, 'newline.procfile')],
     procfiles = {};
 
 var helpers = exports;

@@ -42,6 +42,11 @@ vows.describe('procfile').addBatch({
         });
         
         helpers.putParsed('node', procs);
+      },
+      "with newline at end of file": function() {
+        assert.doesNotThrow(function() {
+          var procs = procfile.parse(procfiles.newline);
+        });
       }
     }
   }
