@@ -1,7 +1,7 @@
 {
   "name": "procfile",
   "description": "A simple CLI tool for ensuring that a given node script runs continuously (i.e. forever)",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Charlie Robbins <charlie.robbins@gmail.com>",
   "repository": {
     "type": "git",
