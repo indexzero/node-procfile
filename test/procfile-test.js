@@ -47,6 +47,10 @@ vows.describe('procfile').addBatch({
         assert.doesNotThrow(function() {
           var procs = procfile.parse(procfiles.newline);
         });
+      },
+      "with colons in the command": function() {
+        var procs = procfile.parse('worker: node worker.js queue:work');
+        assert.deepEqual(procs.worker.options, ['worker.js', 'queue:work']);
       }
     }
   }
